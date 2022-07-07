@@ -6,7 +6,6 @@
 //
 
 #import "HYZNetworkAPI.h"
-
 @interface HYZNetworkAPI ()
 @property (nonatomic, strong)AFHTTPSessionManager *sessionManager;
 @property (nonatomic, strong) NSMutableDictionary *requestRecord;

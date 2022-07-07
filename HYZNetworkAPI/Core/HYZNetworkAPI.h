@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFNetworking.h>
 #import "HYZRequest.h"
 #import "HYZNetworkAPIErrorProtocol.h"
 #import "HYZNetworkAPIConfigProtocol.h"

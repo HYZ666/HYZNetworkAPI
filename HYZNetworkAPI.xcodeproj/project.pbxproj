@@ -31,7 +31,6 @@
 		1874C7FE2876B59200606339 /* HYZNetworkAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZNetworkAPI.h; sourceTree = "<group>"; };
 		1874C7FF2876B59200606339 /* HYZNetWorkConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZNetWorkConst.h; sourceTree = "<group>"; };
 		1874C8002876B59200606339 /* HYZRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZRequest.h; sourceTree = "<group>"; };
-		1874C8012876B59200606339 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1874C8022876B59200606339 /* HYZNetworkAPIErrorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZNetworkAPIErrorProtocol.h; sourceTree = "<group>"; };
 		1874C8072876B5A600606339 /* HYZErrorHandleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZErrorHandleManager.h; sourceTree = "<group>"; };
 		1874C8082876B5A600606339 /* HYZNetworkAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZNetworkAPIConfig.h; sourceTree = "<group>"; };
@@ -78,7 +77,6 @@
 				1874C7FE2876B59200606339 /* HYZNetworkAPI.h */,
 				1874C7FF2876B59200606339 /* HYZNetWorkConst.h */,
 				1874C8002876B59200606339 /* HYZRequest.h */,
-				1874C8012876B59200606339 /* PrefixHeader.pch */,
 				1874C8022876B59200606339 /* HYZNetworkAPIErrorProtocol.h */,
 			);
 			path = Core;
@@ -420,7 +418,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HTW6ZG346Z;
-				GCC_PREFIX_HEADER = /Users/hyz/HYZNetworkAPI/HYZNetworkAPI/Core/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HYZNetworkAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,7 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HTW6ZG346Z;
-				GCC_PREFIX_HEADER = /Users/hyz/HYZNetworkAPI/HYZNetworkAPI/Core/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HYZNetworkAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
