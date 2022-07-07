@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param method 方法
 /// @param success 成功回调
 /// @param failure 错误回调
-+ (HYZRequest *)requestWithUrl:(NSString *)url param:(NSDictionary *)param method:(HYZRequestMethod)method success:(HYZRequestCompletionBlock)success failure:(HYZRequestCompletionBlock)failure;
++ (HYZRequest *)requestWithUrl:(NSString *)url param:(NSDictionary *__nullable)param method:(HYZRequestMethod)method success:(HYZRequestCompletionBlock)success failure:(HYZRequestCompletionBlock)failure;
 
 /// 取消请求
 /// @param request 请求request
