@@ -6,7 +6,6 @@ target 'HYZNetworkAPI' do
   use_frameworks!
 
   # Pods for HYZNetworkAPI
-   #pod 'AFNetworking', '~> 4.0.1'
    pod 'AFNetworking', '~> 4.0.1'
    pod 'MJExtension',   '3.2.1'
 
