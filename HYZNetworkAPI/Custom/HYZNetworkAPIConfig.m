@@ -23,13 +23,4 @@
     return dic;
 }
 
-- (AFSecurityPolicy *)securityPolicy {
-    
-    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
-    // 如果是需要验证自建证书，需要设置为YES
-    securityPolicy.allowInvalidCertificates = YES;
-    securityPolicy.validatesDomainName = NO;
-    return securityPolicy;
-}
-
 @end
