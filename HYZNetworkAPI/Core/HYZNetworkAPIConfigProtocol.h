@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol HYZNetworkAPIConfigProtocol <NSObject>
+@optional
 /// 设置URL共有部分
 - (NSString *)baseUrl;
 /// 设置共有header
