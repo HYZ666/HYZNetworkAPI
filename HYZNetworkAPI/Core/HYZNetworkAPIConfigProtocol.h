@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "AFSecurityPolicy.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol HYZNetworkAPIConfigProtocol <NSObject>
@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDictionary *)requestHeaders;
 /// 设置超时时间
 - (NSTimeInterval)timeoutInterval;
+/// 设置安全策略
+- (AFSecurityPolicy *)securityPolicy;
 
 @end
 

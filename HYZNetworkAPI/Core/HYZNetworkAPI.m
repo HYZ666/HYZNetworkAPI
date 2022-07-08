@@ -36,21 +36,22 @@
     return self;
 }
 
+//初始化操作
 + (void)initWithErrorHandle:(id <HYZNetworkAPIErrorProtocol>)ErrorHandle config:(id <HYZNetworkAPIConfigProtocol>)config {
+    
+    //绑定相应的错误处理和统一配置
     HYZNetworkAPI *networkAPI = [HYZNetworkAPI shareAPI];
     networkAPI.errorDelegate = ErrorHandle;
     networkAPI.configDelegate = config;
+    
+    //根据配置文件配置
+    [networkAPI setConfig:config];
+    
 }
 
 + (HYZRequest *)requestWithUrl:(NSString *)url param:(NSDictionary *)param method:(HYZRequestMethod)method success:(HYZRequestCompletionBlock)success failure:(HYZRequestCompletionBlock)failure {
     
     HYZNetworkAPI *networkAPI = [HYZNetworkAPI shareAPI];
-    
-    //设置RequestSerializer
-    [networkAPI setRequestSerializerWithConfig:nil];
-    //设置ResponseSerializer
-    [networkAPI setResponseSerializerWithConfig:nil];
-    
     //构建相应的request
     HYZRequest *request = [[HYZRequest alloc]init];
     request.successCompletionBlock = success;
@@ -90,6 +91,38 @@
     
 }
 
+- (void)setConfig:(id<HYZNetworkAPIConfigProtocol>)config {
+    //设置RequestSerializer
+    [self setRequestSerializerWithConfig:config];
+    //设置ResponseSerializer
+    [self setResponseSerializerWithConfig:config];
+    //设置安全策略
+    [self setSecurityPolicyWithConfig:config];
+}
+
+- (void)setSecurityPolicyWithConfig:(id<HYZNetworkAPIConfigProtocol>)config {
+    
+    id<HYZNetworkAPIConfigProtocol>finalConfig;
+    
+    if (config == nil) {
+        finalConfig = self.configDelegate;
+    } else {
+        finalConfig = config;
+    }
+    
+    if (finalConfig && [finalConfig respondsToSelector:@selector(securityPolicy)]) {
+        self.sessionManager.securityPolicy = [finalConfig securityPolicy];
+    } else {
+        AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+        // allowInvalidCertificates 是否允许无效证书（也就是自建的证书），默认为NO
+        // 如果是需要验证自建证书，需要设置为YES
+        securityPolicy.allowInvalidCertificates = YES;
+        securityPolicy.validatesDomainName = NO;
+        self.sessionManager.securityPolicy = securityPolicy;
+    }
+    
+}
+
 - (void)setRequestSerializerWithConfig:(id<HYZNetworkAPIConfigProtocol>)config {
     
     id<HYZNetworkAPIConfigProtocol>finalConfig;
@@ -101,7 +134,10 @@
     }
     
     AFJSONRequestSerializer *jsonRequestSerializer = [AFJSONRequestSerializer serializer];
+    //设置默认值
+    jsonRequestSerializer.timeoutInterval = 20;
     
+    //根据相应的个性化配置进行重新设置
     if (finalConfig && [finalConfig respondsToSelector:@selector(timeInterval)]) {
         jsonRequestSerializer.timeoutInterval = [finalConfig timeoutInterval];
     }
@@ -118,6 +154,7 @@
     }
     
     self.sessionManager.requestSerializer = jsonRequestSerializer;
+    
 }
 
 - (void)setResponseSerializerWithConfig:(id<HYZNetworkAPIConfigProtocol>)config {
@@ -229,9 +266,6 @@
     [self.requestRecord removeObjectForKey:@(task.taskIdentifier).stringValue];
     
     [self.requestRecordLock unlock];
-    
-    
-    
     
 }
 
