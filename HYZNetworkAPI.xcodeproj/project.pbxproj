@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1874C8032876B59200606339 /* HYZRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874C7FA2876B59200606339 /* HYZRequest.m */; };
+		1874C8042876B59200606339 /* HYZNetWorkConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874C7FB2876B59200606339 /* HYZNetWorkConst.m */; };
+		1874C8052876B59200606339 /* HYZNetworkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874C7FC2876B59200606339 /* HYZNetworkAPI.m */; };
+		1874C80D2876B5A600606339 /* HYZResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874C8092876B5A600606339 /* HYZResponse.m */; };
+		1874C80E2876B5A600606339 /* HYZErrorHandleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874C80A2876B5A600606339 /* HYZErrorHandleManager.m */; };
+		1874C80F2876B5A600606339 /* HYZNetworkAPIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874C80B2876B5A600606339 /* HYZNetworkAPIConfig.m */; };
+		18A04FC928755E7F0095740B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A04FC828755E7F0095740B /* AppDelegate.m */; };
+		18A04FCC28755E7F0095740B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A04FCB28755E7F0095740B /* SceneDelegate.m */; };
+		18A04FCF28755E7F0095740B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A04FCE28755E7F0095740B /* ViewController.m */; };
+		18A04FD228755E7F0095740B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A04FD028755E7F0095740B /* Main.storyboard */; };
+		18A04FD428755E820095740B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A04FD328755E820095740B /* Assets.xcassets */; };
+		18A04FD728755E820095740B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A04FD528755E820095740B /* LaunchScreen.storyboard */; };
+		18A04FDA28755E820095740B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A04FD928755E820095740B /* main.m */; };
+		35301DED1222E1D811CF9E6C /* Pods_HYZNetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733CFA2ED5067661B14E8D5B /* Pods_HYZNetworkAPI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1874C7FA2876B59200606339 /* HYZRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZRequest.m; sourceTree = "<group>"; };
+		1874C7FB2876B59200606339 /* HYZNetWorkConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZNetWorkConst.m; sourceTree = "<group>"; };
+		1874C7FC2876B59200606339 /* HYZNetworkAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZNetworkAPI.m; sourceTree = "<group>"; };
+		1874C7FD2876B59200606339 /* HYZNetworkAPIConfigProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZNetworkAPIConfigProtocol.h; sourceTree = "<group>"; };
+		1874C7FE2876B59200606339 /* HYZNetworkAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZNetworkAPI.h; sourceTree = "<group>"; };
+		1874C7FF2876B59200606339 /* HYZNetWorkConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZNetWorkConst.h; sourceTree = "<group>"; };
+		1874C8002876B59200606339 /* HYZRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZRequest.h; sourceTree = "<group>"; };
+		1874C8022876B59200606339 /* HYZNetworkAPIErrorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZNetworkAPIErrorProtocol.h; sourceTree = "<group>"; };
+		1874C8072876B5A600606339 /* HYZErrorHandleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZErrorHandleManager.h; sourceTree = "<group>"; };
+		1874C8082876B5A600606339 /* HYZNetworkAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZNetworkAPIConfig.h; sourceTree = "<group>"; };
+		1874C8092876B5A600606339 /* HYZResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZResponse.m; sourceTree = "<group>"; };
+		1874C80A2876B5A600606339 /* HYZErrorHandleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZErrorHandleManager.m; sourceTree = "<group>"; };
+		1874C80B2876B5A600606339 /* HYZNetworkAPIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYZNetworkAPIConfig.m; sourceTree = "<group>"; };
+		1874C80C2876B5A600606339 /* HYZResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYZResponse.h; sourceTree = "<group>"; };
+		18A04FC428755E7F0095740B /* HYZNetworkAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYZNetworkAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A04FC728755E7F0095740B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18A04FC828755E7F0095740B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18A04FCA28755E7F0095740B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		18A04FCB28755E7F0095740B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		18A04FCD28755E7F0095740B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18A04FCE28755E7F0095740B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18A04FD128755E7F0095740B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18A04FD328755E820095740B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A04FD628755E820095740B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18A04FD828755E820095740B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A04FD928755E820095740B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		733CFA2ED5067661B14E8D5B /* Pods_HYZNetworkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYZNetworkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC490DE22D95421DC5B1A8E /* Pods-HYZNetworkAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYZNetworkAPI.release.xcconfig"; path = "Target Support Files/Pods-HYZNetworkAPI/Pods-HYZNetworkAPI.release.xcconfig"; sourceTree = "<group>"; };
+		C0169D59963B9206B7FC1DF6 /* Pods-HYZNetworkAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYZNetworkAPI.debug.xcconfig"; path = "Target Support Files/Pods-HYZNetworkAPI/Pods-HYZNetworkAPI.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A04FC128755E7F0095740B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35301DED1222E1D811CF9E6C /* Pods_HYZNetworkAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1874C7F92876B59200606339 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1874C7FA2876B59200606339 /* HYZRequest.m */,
+				1874C7FB2876B59200606339 /* HYZNetWorkConst.m */,
+				1874C7FC2876B59200606339 /* HYZNetworkAPI.m */,
+				1874C7FD2876B59200606339 /* HYZNetworkAPIConfigProtocol.h */,
+				1874C7FE2876B59200606339 /* HYZNetworkAPI.h */,
+				1874C7FF2876B59200606339 /* HYZNetWorkConst.h */,
+				1874C8002876B59200606339 /* HYZRequest.h */,
+				1874C8022876B59200606339 /* HYZNetworkAPIErrorProtocol.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1874C8062876B5A600606339 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1874C8082876B5A600606339 /* HYZNetworkAPIConfig.h */,
+				1874C80B2876B5A600606339 /* HYZNetworkAPIConfig.m */,
+				1874C8072876B5A600606339 /* HYZErrorHandleManager.h */,
+				1874C80A2876B5A600606339 /* HYZErrorHandleManager.m */,
+				1874C80C2876B5A600606339 /* HYZResponse.h */,
+				1874C8092876B5A600606339 /* HYZResponse.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		18A04FBB28755E7F0095740B = {
+			isa = PBXGroup;
+			children = (
+				18A04FC628755E7F0095740B /* HYZNetworkAPI */,
+				18A04FC528755E7F0095740B /* Products */,
+				319689EE18DCD04282D8A94C /* Pods */,
+				4B7D42B67974B95D0128728E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18A04FC528755E7F0095740B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A04FC428755E7F0095740B /* HYZNetworkAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A04FC628755E7F0095740B /* HYZNetworkAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1874C8062876B5A600606339 /* Custom */,
+				1874C7F92876B59200606339 /* Core */,
+				18A04FC728755E7F0095740B /* AppDelegate.h */,
+				18A04FC828755E7F0095740B /* AppDelegate.m */,
+				18A04FCA28755E7F0095740B /* SceneDelegate.h */,
+				18A04FCB28755E7F0095740B /* SceneDelegate.m */,
+				18A04FCD28755E7F0095740B /* ViewController.h */,
+				18A04FCE28755E7F0095740B /* ViewController.m */,
+				18A04FD028755E7F0095740B /* Main.storyboard */,
+				18A04FD328755E820095740B /* Assets.xcassets */,
+				18A04FD528755E820095740B /* LaunchScreen.storyboard */,
+				18A04FD828755E820095740B /* Info.plist */,
+				18A04FD928755E820095740B /* main.m */,
+			);
+			path = HYZNetworkAPI;
+			sourceTree = "<group>";
+		};
+		319689EE18DCD04282D8A94C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0169D59963B9206B7FC1DF6 /* Pods-HYZNetworkAPI.debug.xcconfig */,
+				8FC490DE22D95421DC5B1A8E /* Pods-HYZNetworkAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4B7D42B67974B95D0128728E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				733CFA2ED5067661B14E8D5B /* Pods_HYZNetworkAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A04FC328755E7F0095740B /* HYZNetworkAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A04FDD28755E820095740B /* Build configuration list for PBXNativeTarget "HYZNetworkAPI" */;
+			buildPhases = (
+				1E4CCC414D83B312DE80B3E0 /* [CP] Check Pods Manifest.lock */,
+				18A04FC028755E7F0095740B /* Sources */,
+				18A04FC128755E7F0095740B /* Frameworks */,
+				18A04FC228755E7F0095740B /* Resources */,
+				A7A5483706471397F9132136 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HYZNetworkAPI;
+			productName = HYZNetworkAPI;
+			productReference = 18A04FC428755E7F0095740B /* HYZNetworkAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A04FBC28755E7F0095740B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					18A04FC328755E7F0095740B = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 18A04FBF28755E7F0095740B /* Build configuration list for PBXProject "HYZNetworkAPI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A04FBB28755E7F0095740B;
+			productRefGroup = 18A04FC528755E7F0095740B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A04FC328755E7F0095740B /* HYZNetworkAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A04FC228755E7F0095740B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A04FD728755E820095740B /* LaunchScreen.storyboard in Resources */,
+				18A04FD428755E820095740B /* Assets.xcassets in Resources */,
+				18A04FD228755E7F0095740B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E4CCC414D83B312DE80B3E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HYZNetworkAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A5483706471397F9132136 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HYZNetworkAPI/Pods-HYZNetworkAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HYZNetworkAPI/Pods-HYZNetworkAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HYZNetworkAPI/Pods-HYZNetworkAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A04FC028755E7F0095740B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1874C80E2876B5A600606339 /* HYZErrorHandleManager.m in Sources */,
+				1874C8042876B59200606339 /* HYZNetWorkConst.m in Sources */,
+				1874C8052876B59200606339 /* HYZNetworkAPI.m in Sources */,
+				1874C80F2876B5A600606339 /* HYZNetworkAPIConfig.m in Sources */,
+				1874C80D2876B5A600606339 /* HYZResponse.m in Sources */,
+				18A04FCF28755E7F0095740B /* ViewController.m in Sources */,
+				18A04FC928755E7F0095740B /* AppDelegate.m in Sources */,
+				18A04FDA28755E820095740B /* main.m in Sources */,
+				18A04FCC28755E7F0095740B /* SceneDelegate.m in Sources */,
+				1874C8032876B59200606339 /* HYZRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18A04FD028755E7F0095740B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A04FD128755E7F0095740B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18A04FD528755E820095740B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A04FD628755E820095740B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A04FDB28755E820095740B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18A04FDC28755E820095740B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18A04FDE28755E820095740B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0169D59963B9206B7FC1DF6 /* Pods-HYZNetworkAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HTW6ZG346Z;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HYZNetworkAPI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyz.HYZNetworkAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18A04FDF28755E820095740B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC490DE22D95421DC5B1A8E /* Pods-HYZNetworkAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HTW6ZG346Z;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HYZNetworkAPI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyz.HYZNetworkAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A04FBF28755E7F0095740B /* Build configuration list for PBXProject "HYZNetworkAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A04FDB28755E820095740B /* Debug */,
+				18A04FDC28755E820095740B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A04FDD28755E820095740B /* Build configuration list for PBXNativeTarget "HYZNetworkAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A04FDE28755E820095740B /* Debug */,
+				18A04FDF28755E820095740B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18A04FBC28755E7F0095740B /* Project object */;
+}
